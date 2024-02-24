@@ -1,0 +1,649 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;   Heading*/
+}
+
+/* Navbar Section CSS Start */
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  /* position: sticky;
+  top: 0; */
+}
+
+.logo {
+  width: 45%;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.right {
+  width: 45%;
+}
+
+.right ul {
+  display: flex;
+}
+
+.right li {
+  list-style: none;
+  margin: 0px 13px;
+}
+
+/* dropdown Start */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: 1; */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown End */
+
+.right a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.right a:hover {
+  color: #f7444e;
+}
+
+.right i:hover {
+  color: #f7444e;
+}
+/* Navbar Section CSS End */
+
+/* Main Detail Box CSS Start */
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background: url(images/slider-bg.jpg);
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.detail-box {
+  height: 300px;
+  width: 45%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.detail-box h1 {
+  line-height: 70px;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+}
+
+span {
+  color: #f7444e;
+}
+
+.detail-box p {
+  line-height: 30px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 30px 0px;
+}
+
+.shop-btn {
+  height: 50px;
+  width: 170px;
+  border: none;
+  background-color: #f7444e;
+}
+
+.shop-btn a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+/* Main Detail Box CSS End */
+
+/* Shop with us Section CSS Start */
+.shop-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-container {
+  width: 90%;
+  /* background-color: aquamarine; */
+  height: 80vh;
+}
+
+.heading h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 30px 0px;
+  padding: 10px 0px;
+}
+
+.shop-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shop-box {
+  height: 230px;
+  width: 27%;
+  background-color: #00648b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.svg-img img {
+  height: 60px;
+}
+
+.shop-detail {
+  text-align: center;
+}
+
+.shop-detail h5 {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin: 10px 0px;
+  color: white;
+}
+
+.shop-detail p {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+/* Shop with us Section CSS End */
+
+/* New Arrivals Section CSS Start */
+.arvl-container {
+  background: url(images/arrival-bg.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.arvl-detail {
+  height: 300px;
+  width: 45%;
+  /* background-color: aquamarine; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.arvl-detail h2 {
+  font-size: 3.5rem;
+}
+
+.arvl-detail p {
+  font-size: 1.3rem;
+  margin: 25px 0px;
+}
+/* New Arrivals Section CSS End */
+
+/* Our Products Section CSS Start */
+.pro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.our-pro {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 50px 0px;
+  font-family: "Playfair Display", serif;
+}
+
+.pro-inner-container {
+  width: 90%;
+  height: 1400px;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.pro-box {
+  background-color: #f1f6fa;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.pro-box:hover {
+  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.pro-img {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.pro-img img {
+  height: 200px;
+}
+
+.pro-detail {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pro-detail h5 {
+  margin-right: 120px;
+}
+
+.buycart-btn {
+  margin-top: 10px;
+}
+
+.buycart-btn button {
+  margin: 5px 20px 5px 20px;
+  border: none;
+  /* background-color: #f7444e; */
+  height: 35px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.buycart-btn a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.cart-btn {
+  background-color: #f7444e;
+}
+
+.cart-btn:hover {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+.cart-btn:hover * {
+  color: red;
+}
+
+.buy-btn {
+  background-color: black;
+}
+
+.buy-btn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.buy-btn:hover * {
+  color: black;
+}
+
+.allpro-btn {
+  margin-top: 40px;
+  border: none;
+  height: 45px;
+  width: 200px;
+  background-color: #f7444e;
+}
+
+.allpro-btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.allpro-btn:hover {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+.allpro-btn:hover * {
+  color: red;
+}
+/* Our Products Section CSS End */
+
+/* subcribe section CSS start */
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #d4ced0;
+  margin-top: 10px;
+}
+
+.sub-detail {
+  /* background-color: antiquewhite; */
+  height: 450px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-heading {
+  width: 570px;
+}
+.sub-heading h3 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color: #002c3e;
+}
+
+.sub-heading p {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 25px 0px;
+}
+
+.sub-input {
+  display: block;
+  height: 50px;
+  width: 600px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 5px 25px;
+}
+
+.sub-btn {
+  height: 45px;
+  width: 270px;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.sub-btn:hover {
+  background-color: transparent;
+  /* color: red; */
+  border: 1px solid red;
+}
+
+.sub-btn:hover * {
+  color: red;
+}
+
+/* subcribe section CSS end */
+
+
+/* Testimonial Page CSS Start */
+
+.tm-container {
+  height: 900px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  margin-top: 60px;
+  text-align: center;
+}
+
+.tm-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* .tm-header h5 {
+  color: #06bbcc;
+} */
+
+.stu-cards {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: aquamarine; */
+  height: 380px;
+}
+
+.stu-card {
+  height: 350px;
+  width: 380px;
+  margin-top: 20px;
+  /* background-color: #dbfbfe9b; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .stu-card:hover {
+  border: 2px solid #f7444e;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+} */
+
+.stu-card img {
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+
+.stu-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 50px;
+  margin-bottom: 20px; */
+  margin: 30px 0px;
+}
+
+.stu-name h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+.stu-name p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #002c3e;
+}
+
+.stu-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #06bbcc; */
+  background-color: #f1f6fa;
+  height: 100%;
+}
+
+.stu-para p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #52565b;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px 10px;
+}
+
+.stu-para:hover {
+  background-color: black;
+  color: white;
+}
+
+.stu-para:hover * {
+  color: white;
+}
+
+.more {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+/* Testimonial Page CSS End */
+
+/* Footer Section CSS Start */
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: #f8f8f8;
+    margin-top: 70px;
+}
+
+.footer-container {
+  /* background-color: #f7444e; */
+  height: 60vh;
+  width: 90%;
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: 30% 20% 20% 27%;
+  grid-gap: 10px;
+}
+
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-box img {
+  height: 40px;
+}
+
+.ftr-img {
+  margin-bottom: 20px;
+}
+
+.ftr-info p {
+  margin: 25px 0px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+}
+
+.ftr-heading {
+  margin-bottom: 30px;
+   font-family: "Playfair Display", serif;
+   font-weight: bold;
+}
+
+
+.ftr-heading h3 {
+  font-size: 1.3rem;
+}
+
+.heading-ftr {
+  margin-top: -35px;
+}
+
+.ftr-info a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ftr-input {
+  border: none;
+  height: 50px;
+  width: 180px;
+  padding: 0px 10px;
+  font-size: 1.1rem;
+}
+
+.ftr-btn {
+  border: none;
+  height: 50px;
+  width: 100px;
+  background-color: #f7444e;
+}
+
+.ftr-btn a {
+  color: white;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.cpy {
+  background-color: #222;
+  color: white;
+  height: 15vh;
+}
+
+.cpy p {
+  text-align: center;
+  padding: 18px 0px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+}
+
+.cpy a {
+  color: #f7444e;
+  text-decoration: none;
+}
+
+/* Footer Section End Start */
